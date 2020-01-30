@@ -27,7 +27,7 @@
             = "Editing Todo: #{todo.title}"
         .modal-body
           = f.label :status
-          = select_tag :status, options_for_select(Todo.statuses.map {|k, v| [k.humanize.capitalize, v]})
+          = select_tag :status, options_for_select(Todo.statuses.map {|k, v| [k.humanize.capitalize, v]}, todo.status)
           = f.hidden_field :project_id, :value => project_id
         .modal-footer
           = f.submit 'Save', class: 'btn btn-primary'

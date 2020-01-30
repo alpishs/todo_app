@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3378c49-f577-4fbf-9ce2-535b71d17c2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/todos/_todo_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/_todo_form.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -74,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/todos/_todo_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="117" selection-start-line="11" selection-start-column="117" selection-end-line="11" selection-end-column="117" />
+            <state relative-caret-position="435">
+              <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -155,7 +155,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20200127111202_create_projects.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.haml" />
         <option value="$PROJECT_DIR$/app/views/todos/show_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/todos/_todo_form.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/todos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/_project_list.html.haml" />
@@ -163,6 +162,7 @@
         <option value="$PROJECT_DIR$/app/views/todos/_todo_status_form.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/views/todos/_todo_form.html.haml" />
       </list>
     </option>
   </component>
@@ -399,12 +399,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580204177463</updated>
-      <workItem from="1580204178913" duration="23250000" />
+      <workItem from="1580204178913" duration="23470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23250000" />
+    <option name="totallyTimeSpent" value="23470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="341" y="103" width="1099" height="732" extended-state="0" />
@@ -713,17 +713,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/_todo_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="117" selection-start-line="11" selection-start-column="117" selection-end-line="11" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="69" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/_todo_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
         </state>
       </provider>
     </entry>
