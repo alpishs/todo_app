@@ -1,0 +1,15 @@
+- if projects.empty?
+  %span.text-warning There are no Projects assigned to you, Please check with your Project Manager!
+- else
+  %table.table.table-hover.table-bordered
+    %thead
+      %tr
+        %th Name
+        %th Todos
+    %tbody
+      - projects.each do |project|
+        %tr
+          %td
+            %strong= project.name
+
+

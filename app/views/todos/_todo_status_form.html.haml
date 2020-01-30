@@ -1,0 +1,14 @@
+.modal-dialog{role: "document"}
+  .modal-content
+    = simple_form_for todo, class: 'clearfix', remote: true do |f|
+      .modal-header
+        %h1
+          = "Editing Todo #{todo.name}"
+      .modal-body
+        = f.input :title,:readonly => true
+        = f.input :note,:readonly => true
+        = f.input :status
+        = f.hidden_field :project_id, :value => project_id
+      .modal-footer
+        = f.submit 'Save', class: 'btn btn-primary'
+
