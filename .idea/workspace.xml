@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/todos/_todo_list.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+              <caret column="59" selection-start-column="59" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -399,12 +399,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580204177463</updated>
-      <workItem from="1580204178913" duration="22466000" />
+      <workItem from="1580204178913" duration="22595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22466000" />
+    <option name="totallyTimeSpent" value="22595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="341" y="103" width="1099" height="732" extended-state="0" />
@@ -675,7 +675,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/todos/_todo_list.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -702,7 +702,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -722,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
