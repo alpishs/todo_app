@@ -1,0 +1,34 @@
+- if current_user.projectmanager_role?
+  .modal-dialog{role: "document"}
+    .modal-content
+      = simple_form_for todo, class: 'clearfix', remote: true do |f|
+        .modal-header
+          %h1
+            = todo.new_record? ? 'New Todo' : "Editing Todo: #{todo.title}"
+        .modal-body
+          = f.input :title
+          = f.input :note
+          = f.label :status
+          = select_tag :status, options_for_select(Todo.statuses.map {|k, v| [k.humanize.capitalize, v]}, todo.status)
+          = f.label :assignee
+          - if todo.users_todo.present?
+            = todo.users_todo.user.email
+          - else
+            = select_tag(:user_id, options_from_collection_for_select(User.all_except(current_user), 'id', 'email'), prompt: "Select a User")
+          = f.hidden_field :project_id, :value => project_id
+        .modal-footer
+          = f.submit 'Save', class: 'btn btn-primary'
+- else
+  .modal-dialog{role: "document"}
+    .modal-content
+      = simple_form_for todo, class: 'clearfix', remote: true do |f|
+        .modal-header
+          %h1
+            = "Editing Todo: #{todo.title}"
+        .modal-body
+          = f.label :status
+          = select_tag :status, options_for_select(Todo.statuses.map {|k, v| [k.humanize.capitalize, v]})
+          = f.hidden_field :project_id, :value => project_id
+        .modal-footer
+          = f.submit 'Save', class: 'btn btn-primary'
+

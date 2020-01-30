@@ -1,0 +1,1 @@
+$('#project-list').html('<%= j(render partial: 'project_list', locals: {projects: @projects})%>');

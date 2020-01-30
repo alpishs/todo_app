@@ -1,0 +1,13 @@
+.modal-dialog{role: "document"}
+  .modal-content
+    = simple_form_for project, class: 'clearfix', remote: true do |f|
+      .modal-header
+        %h1
+          = project.new_record? ? 'New Project' : "Editing Project #{project.name}"
+      .modal-body
+        = f.input :name
+        = f.input :note
+        =# f.input :completed
+        = select_tag(:user_id, options_from_collection_for_select(User.all_except(current_user), 'id', 'email'), prompt: "Select a User")
+      .modal-footer
+        = f.submit 'Save', class: 'btn btn-primary'

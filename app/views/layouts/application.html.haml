@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Todo
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_pack_tag "application"
+    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"}
+    %script{:src => "https://www.gstatic.com/charts/loader.js", :type => "text/javascript"}
+    = csrf_meta_tags
+  %body
+    .row-fluid
+      .span10.offset1
+        .hero-unit.text-center
+          %h1
+            ToDo
+          %p
+            Welcome to the ToDo application
+          .text-
+            - if current_user.projectmanager_role?
+              = link_to 'New Project', new_project_path,  class:  'btn btn-primary', remote: true
+          .text-center
+            %strong= current_user.try(:email)
+          .text-center
+            = link_to 'logout', destroy_user_session_path, method: :delete
+    = yield

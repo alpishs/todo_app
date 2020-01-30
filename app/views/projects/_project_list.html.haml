@@ -1,0 +1,30 @@
+- if projects.empty?
+  %span.text-warning There are no Projects!
+- else
+  %table.table.table-hover.table-bordered
+    %thead
+      %tr
+        %th Name
+        %th Created at
+        %th Associated Users
+        %th Actions
+        %th Create Todos
+        %th Show Todos
+    %tbody
+      - projects.each do |project|
+        %tr
+          %td
+            %strong= project.name
+          %td.text-info= project.created_at
+          %td= project.project_users
+          %td
+            = link_to project_path(project), method: :delete, data: {confirm: "Are you sure you want to delete project #{project.name}?"} do
+              %i.icon-remove Del
+            = link_to edit_project_path(project), remote: true do
+              %i.icon-edit Edit
+          %td
+            = link_to 'Create Todos',  new_todo_path(id: project.id), class:  'btn btn-primary'
+          %td
+            = link_to 'Show Todos',  todo_path(id: project.id), class:  'btn btn-primary'
+
+        

@@ -1,0 +1,19 @@
+- if todos.empty?
+  %span.text-warning There are no Todos yet!
+- else
+  = pie_chart todos.group(:status).count
+  %table.table.table-hover.table-bordered
+    %thead
+      %tr
+        %th Title
+        %th Status
+        %th Edit Assignees
+    %tbody
+      - todos.each do |todo|
+        %tr
+          %td
+            %strong= todo.title
+          %td.text-success= todo.status
+          %td
+            = link_to edit_todo_path(todo) do
+              %i.icon-edit Edit

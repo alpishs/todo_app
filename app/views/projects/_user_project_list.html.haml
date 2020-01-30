@@ -4,12 +4,13 @@
   %table.table.table-hover.table-bordered
     %thead
       %tr
-        %th Name
-        %th Todos
+        %th Project Name
+        %th Todos Count
+        %th See Todos
     %tbody
       - projects.each do |project|
         %tr
           %td
             %strong= project.name
-
+          %td=project.todos.count
 
