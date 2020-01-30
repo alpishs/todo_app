@@ -25,7 +25,7 @@ project_ids = Project.all.map(&:id)
 status = ['DONE', 'NEW', 'IN_PROGRESS']
 (1..(rand(20..40))).each do |num|
   todo = Todo.create!({title: "Task #{num}", note: "Notes for Todo #{num}", status: status.sample, project_id: project_ids.sample})
-  user = User.where.not('email = "test_projectmanager@test.com"')
+  user = User.where.not('email = "test_projectmanager@test.com"').sample
   user.todos << todo
   user.projects << todo.project unless user.projects.include?(todo.project)
   user.save!
