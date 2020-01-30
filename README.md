@@ -37,25 +37,39 @@ progress
 
 Sample Data
 
+
 Admin Login Credentials:
+
 email: test_projectmanager@test.com
+
 password: password
 
 
 Developers
+
 vikas@promobitech.com - test1234
+
 hajel@promobitech.com - test1234
+
 alpish@promobitech.com - test1234
 
 
 The Application has been deployed on Heroku and can be seen via this URL: https://polar-atoll-34989.herokuapp.com/
 
 Steps for setup the application to your local machine
+
 Clone it from GitHub
+
 cd "proj_name"
+
 bundle
+
 rake db:create
+
 rake db:migrate
+
 rake db:seed
+
 rails s
+
 Open browser and open http://localhost:3000 url
